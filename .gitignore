@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.tmp/
+.venv/
+.venv_cuda/
+venv/
+test_write.tmp
+
+# No subir dataset
+Proyecto 1 Data set/
+
+# Artefactos
+outputs/
+models/*.pt
+models/*.pth
+
+# Colab / auxiliares no usados en entrega final
+colab_pipeline.ipynb
+COLAB.md
+run_full_pipeline_colab.sh
+2.transfer_learning.ipynb
+
+# Imagenes de prueba personales
+inference_images/*
+!inference_images/README.txt
