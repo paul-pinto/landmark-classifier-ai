@@ -2,11 +2,11 @@ import gradio as gr
 import torch
 from pathlib import Path
 
-# Importamos tu función original desde la carpeta src
+# Importamos la función original desde la carpeta src
 from src.predictor import predict_landmarks
 
-# 1. Configuración de Rutas
-# Usamos rutas relativas para que funcionen tanto en tu PC local como en la nube
+# 1. Configuramos las Rutas
+# Usamos rutas relativas para que funcionen tanto en la PC local como en la nube
 MODEL_PATH = 'models/transfer_best_gpu.pt'
 CLASS_MAP = 'outputs/transfer_run_gpu/class_to_idx.json'
 
@@ -20,7 +20,7 @@ def clasificar_imagen(img_path):
         return {}
         
     try:
-        # Extraemos el Top-5 de predicciones usando tu código
+        # Extraemos el Top-5 de predicciones usando el código
         predicciones = predict_landmarks(img_path, MODEL_PATH, CLASS_MAP, k=5)
         
         # Gradio (gr.Label) necesita un diccionario: {'Torre Eiffel': 0.88, ...}
