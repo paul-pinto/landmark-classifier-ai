@@ -1,11 +1,14 @@
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+.ipynb_checkpoints/report.pdf
+*.pdf
 .tmp/
-.venv/
+.venv/report.pdf
+*.pdf
 .venv_cuda/
 venv/
-test_write.tmp
+test_write.tmpreport.pdf
+*.pdf
 
 # No subir dataset
 Proyecto 1 Data set/
